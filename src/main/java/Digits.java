@@ -24,9 +24,9 @@ public boolean isStrictlyIncreasing()
 for(int i = 1; i < digitList.size(); i++){
 if(digitList.get(i) > digitList.get(i-1)){
 return true;
-// for(int i = 0; i < didgitList.size()-1; i++){
-//  if(digitList.get(i+1) <= digitList.get(i)){
-//  return false;
+for(int i = 0; i < didgitList.size()-1; i++){
+if(digitList.get(i+1) <= digitList.get(i)){
+return false;
 }
 }
 return false;
